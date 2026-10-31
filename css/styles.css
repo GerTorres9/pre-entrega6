@@ -88,11 +88,6 @@ h1 {
     font-size: 0.94rem;
 }
 
-.bloque-catalogo span {
-    color: var(--acento-cian);
-    font-weight: 600;
-}
-
 code {
     background: rgba(56, 189, 248, 0.15);
     color: var(--acento-cian);

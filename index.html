@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechCore Hardware | Simulador POO con Clases y Objetos (Pre-Entrega 5)</title>
+    <title>TechCore Hardware | Funciones de Orden Superior (Pre-Entrega 6)</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- Archivo JavaScript dentro de su carpeta ./js/ enlazado en el head con el atributo defer -->
+    <!-- Archivo JavaScript en su carpeta ./js/ enrutado en el head con el atributo defer -->
     <script src="./js/main.js" defer></script>
 </head>
 <body>
     <main class="contenedor-principal">
         <section class="tarjeta-presentacion">
-            <span class="insignia-entrega">JavaScript · Pre-Entrega 5: Instanciando Objetos</span>
+            <span class="insignia-entrega">JavaScript · Pre-Entrega 6: Funciones de Orden Superior</span>
             <h1>TechCore Hardware &amp; PC</h1>
             <p class="descripcion">
-                Simulador interactivo de inventario y cotización de hardware modelado con
-                <strong>Programación Orientada a Objetos (<code>class ProductoHardware</code>)</strong>,
-                constructor con <code>this</code>, métodos de instancia (<code>vender</code>, <code>aplicarDescuento</code>,
-                <code>calcularPrecioConIva</code>, <code>reponerStock</code>), instanciación con <code>new</code>,
-                arrays de objetos, funciones y ciclos.
+                Simulador interactivo de tienda de hardware que integra la clase <code>ProductoHardware</code>,
+                array de objetos y <strong>Funciones de Orden Superior</strong>:
+                métodos de búsqueda (<code>find</code>, <code>filter</code>, <code>some</code>, <code>forEach</code>)
+                y métodos de transformación y cálculo (<code>map</code> y <code>reduce</code>).
             </p>
 
             <div class="bloque-catalogo">
-                <h2>Instancias de <code>ProductoHardware</code> en el Simulador</h2>
+                <h2>Operaciones con Funciones de Orden Superior en el Simulador</h2>
                 <ul>
-                    <li><strong>ID #1:</strong> Procesador AMD Ryzen 7 7800X3D (Procesadores) — <span>$8,400 MXN</span></li>
-                    <li><strong>ID #2:</strong> Tarjeta Gráfica NVIDIA RTX 4070 Super (Tarjetas de Video) — <span>$13,900 MXN</span></li>
-                    <li><strong>ID #3:</strong> Memoria RAM Kit 32GB DDR5 6000MHz (Memorias RAM) — <span>$2,450 MXN</span></li>
-                    <li><strong>ID #4:</strong> Unidad SSD NVMe M.2 Gen4 2TB (Almacenamiento) — <span>$2,850 MXN</span></li>
-                    <li><strong>ID #5:</strong> Monitor Gamer 27" QHD 180Hz IPS (Monitores) — <span>$5,600 MXN</span></li>
+                    <li><strong><code>forEach</code>:</strong> Recorre e imprime el catálogo de objetos y el detalle del carrito.</li>
+                    <li><strong><code>find</code>:</strong> Localiza un componente específico por su <code>id</code> o nombre para comprar o consultar.</li>
+                    <li><strong><code>filter</code> + <code>some</code>:</strong> Filtra componentes con stock disponible o según el presupuesto máximo del cliente.</li>
+                    <li><strong><code>map</code>:</strong> Transforma el catálogo generando un nuevo array con precios con IVA incluido y precios promocionales.</li>
+                    <li><strong><code>reduce</code>:</strong> Calcula tanto el valor total del inventario en almacén como el subtotal y total de unidades del carrito.</li>
                 </ul>
             </div>
 
@@ -36,8 +35,7 @@
                 <h3>Instrucciones para revisar la entrega:</h3>
                 <ol>
                     <li>Abre la <strong>Consola del Navegador</strong> (<strong>F12</strong> o <strong>Cmd + Option + J</strong> en Mac).</li>
-                    <li>En la consola verás la verificación de las instancias creadas con <code>new ProductoHardware(...)</code> y la ejecución de sus métodos modificando <code>precio</code> y <code>stock</code>.</li>
-                    <li>Interactúa con el simulador mediante los cuadros de diálogo <code>prompt</code>, <code>confirm</code> y <code>alert</code> para descontar stock real de cada objeto al comprar.</li>
+                    <li>Utiliza el menú interactivo por <code>prompt</code> para filtrar por presupuesto (<code>filter</code>), buscar y comprar por ID/nombre (<code>find</code>), transformar lista con IVA (<code>map</code>) y finalizar compra (<code>reduce</code>).</li>
                 </ol>
             </div>
         </section>
